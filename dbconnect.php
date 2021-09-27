@@ -8,7 +8,6 @@ ini_set('display_errors',true);
     $pass = DB_PASS;
     $dsn = "mysql:host=$host;dbname=$db;charset=utf8";
     
-  
     try{
       $dbh = new PDO($dsn,$user,$pass,[
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
